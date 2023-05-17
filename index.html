@@ -2,62 +2,110 @@
 <html>
 <head>
   <title>Alenis's Portfolio</title>
-  <style>
+  <style type="text/css">
     /* CSS styles for the portfolio */
+    .inner-main-nav{
+      max-width:1170px;
+      margin:auto;
+    }
+
+    .inner-main-nav ul {
+      text-align:right;
+      margin:0;
+      padding: 50px 0;
+    }
+
+    .inner-main-nav ul li{
+      float: none;
+      display: inline-block;
+    }
+
+    .inner-main-nav ul li:nth-child(1),
+    .inner-main-nav ul li:nth-child(2),
+    .inner-main-nav ul li:nth-child(3){
+      float: left;
+    }    
+
+    .inner-main-nav ul li a{
+      margin: 0 35px;
+      font-family: arial;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #acd2ed;
+      font-weight: bold;
+    }
+
+    .logo{
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo img{
+      width: 100%;
+    }
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #ffd1ba;
     }
     
     header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
+      background-color: #12355b;
+      padding: 0;
       text-align: center;
+      margin: 0;
     }
     
     h1 {
       margin: 0;
     }
-    
-    nav {
-      background-color: #555;
-      padding: 10px;
-      text-align: center;
+
+    p, li{
+      color: #9e2a2b;
     }
-    
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      padding: 5px 10px;
+
+    h2{
+      color: #540b0e;
     }
     
     section {
-      margin: 20px;
+      margin: 10px;
       text-align: center;
     }
     
     footer {
-      background-color: #333;
-      color: #fff;
+      background-color: #12355b;
+      color: #acd2ed;
       padding: 10px;
       text-align: center;
     }
+    
   </style>
 </head>
 <body>
   <header>
-    <h1>Alenis Chavarria</h1>
+    <div class="logo">
+    <img src="Alenis-1(1).png" class="hello" alt="my logo" width="180" height="130">
+    </div>
+
+    <div class="inner-main-nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#frontendprojects">F-e Projs</a></li>
+        <li><a href="#backendprojects">B-e Projs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
   </header>
-  
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#resume">Resume</a>
-    <a href="#about">About Me</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    
   
   <section id="home">
     <h2>Welcome to my portfolio!</h2>
@@ -66,7 +114,7 @@
   
   <section id="resume">
     <h2>My Resume</h2>
-    <p>button for resume download</p>
+    <button type="button">Click Me to Download</button>
   </section>
 
   <section id="about">
@@ -74,8 +122,17 @@
     <p>I am a passionate developer with experience in web development.</p>
   </section>
   
-  <section id="projects">
-    <h2>Projects </h2>
+  <section id="frontendprojects">
+    <h2>Front-end Projects </h2>
+    <ul>
+      <li>Project 1</li>
+      <li>Project 2</li>
+      <li>Project 3</li>
+    </ul>
+  </section>
+
+  <section id="backendprojects">
+    <h2>Back-end Projects </h2>
     <ul>
       <li>Project 1</li>
       <li>Project 2</li>
@@ -86,8 +143,8 @@
   <section id="contact">
     <h2>Contact Me</h2>
     <p>You can reach me at example@example.com.</p>
-    <p>button for LinkedIn link</p>
-    <p>button for github</p>
+    <button type="button">LinkedIn</button>
+    <button type="button">GitHub</button>
   </section>
   
   <footer>
