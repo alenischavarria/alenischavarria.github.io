@@ -19,8 +19,18 @@ li{
   color: #D9D9D9;
   font-size: 34px;
 }
-/*style later*/
-li:hover{
+a{
+  color: #D9D9D9;
+  text-decoration: none;
+}
+nav ul li.active{
+  color: #D9D9D9 ;
+}
+
+main{
+  background-color: #002F6D;
+  color: white;
+  font-size: 50pt;
 }
 
 body{
