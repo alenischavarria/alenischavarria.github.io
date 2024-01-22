@@ -18,24 +18,133 @@ const NavBar = () => {
       });
     }
   };
+
   return(
     <nav>
-      <ul>
-        <li className={activeLink === 'home' ? 'active' : ''}>
+      <ul className='navbaruli'>
+        <li id="navbarli" className={activeLink === 'home' ? 'active' : ''}>
           <a href="#home" id="navbar" onClick={(e) => handleLinkClick(e, 'home')}>//home  </a></li>
-        <li className={activeLink === 'aboutme' ? 'active' : ''}>
+        <li id="navbarli" className={activeLink === 'aboutme' ? 'active' : ''}>
           <a href="#aboutme" id="navbar">//about me  </a></li>
-        <li className={activeLink === 'education' ? 'active' : ''}>
+        <li id="navbarli" className={activeLink === 'education' ? 'active' : ''}>
           <a href="#education" id="navbar">//education  </a></li>
-        <li className={activeLink === 'projects' ? 'active' : ''}>
+        <li id="navbarli" className={activeLink === 'projects' ? 'active' : ''}>
           <a href="#projects" id="navbar">//projects  </a></li>
-        <li> <a id="resumepdf" href="myportfolio./my-portfolio/resumes/Software Engineer copy.pdf" download="My Resume">//resume  </a></li>
-        <li className={activeLink === 'contact' ? 'active' : ''}>
+        <li id="navbarli"> //resume  </li>
+        <li id="navbarli" className={activeLink === 'contact' ? 'active' : ''}>
           <a href="#contact" id="navbar">//contact  </a></li>
       </ul>
     </nav>
-  )
-}
+  );
+};
+
+const Button = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedOption, setSelectedOption] = useState('');
+
+  const handlerOptionSelect = (option) => {
+    setSelectedOption(option);
+    setIsOpen(false);
+  }
+
+  return (
+    <div >
+      <button onClick={() => setIsOpen(!isOpen)} className="custom-button">
+        COURSEWORK
+      </button>
+      {isOpen && (
+        <ul id="option">
+          <li id="options" onClick={() => handlerOptionSelect('Option 1')}>AI Topics in Image Processing</li>
+          <li id="options" onClick={() => handlerOptionSelect('Option 2')}>Advanced Database Design</li>
+        </ul>
+      )}
+    </div>
+  );
+};
+
+const Button2 = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedOption, setSelectedOption] = useState('');
+
+  const handlerOptionSelect = (option) => {
+    setSelectedOption(option);
+    setIsOpen(false);
+  }
+
+  return (
+    <div >
+      <button onClick={() => setIsOpen(!isOpen)} className="custom-button">
+        COURSEWORK
+      </button>
+      {isOpen && (
+        <ul id="option2">
+          <li id="options" onClick={() => handlerOptionSelect('Option 1')}>COMING SOON</li>
+        </ul>
+      )}
+    </div>
+  );
+};
+
+const Button3 = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedOption, setSelectedOption] = useState('');
+
+  const handlerOptionSelect = (option) => {
+    setSelectedOption(option);
+    setIsOpen(false);
+  }
+
+  return (
+    <div >
+      <button onClick={() => setIsOpen(!isOpen)} className="custom-button">
+        COURSEWORK
+      </button>
+      {isOpen && (
+        <ul id="option3">
+          <li id="options" onClick={() => handlerOptionSelect('Option 1')}>Business Information Management</li>
+          <li id="options" onClick={() => handlerOptionSelect('Option 2')}>Principles of Information Technology</li>
+        </ul>
+      )}
+    </div>
+  );
+};
+
+const Square1 = () => {
+  return <div className="square">
+    <p id="pinfo">Masters of Science in Computer Science</p>
+    <h1 id="uniinfo">University of Texas Rio Grande Valley</h1>
+    <h5 id="timeinfo">January 2024 - Present</h5>
+    <Button />
+  </div>;
+};
+
+const Square2 = () => {
+  return <div className="square">
+    <p id="pinfo">Bachelors of Science in Computer Science</p>
+    <h1 id="uniinfo">University of Texas Rio Grande Valley</h1>
+    <h5 id="timeinfo">August 2020 - December 2023</h5>
+    <Button2 />
+  </div>;
+};
+
+const Square3 = () => {
+  return <div className="square">
+    <p id="pinfo">Associates of Arts in Interdisciplinary Studies</p>
+    <h1 id="uniinfo">South Texas College</h1>
+    <h5 id="timeinfo">January 2017 - May 2020</h5>
+    <Button3 />
+  </div>;
+};
+
+const SquareContainer = () => {
+  return (
+    <div className='square-container'>
+      <Square1 />
+      <Square2 />
+      <Square3 />
+    </div>
+  );
+};
 
 const AboutMeInfo = () => {
   return(
@@ -45,7 +154,16 @@ const AboutMeInfo = () => {
   )
 }
 
-const EducationInfo = () => {}
+const EducationInfo = () => {
+
+  return (
+    <>
+    <div id="eduinfo">
+      <SquareContainer />
+    </div>
+    </>
+  )
+}
 
 const ProjectsInfo = () => {}
 
@@ -85,7 +203,7 @@ function App() {
         <section id="education">
           <h1>Education</h1>
             <EducationInfo />
-          <p>COMING SOON</p>
+         
         </section>
         <section id="projects">
           <h1>Projects</h1>

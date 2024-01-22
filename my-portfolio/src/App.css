@@ -7,17 +7,30 @@ nav {
   text-align: center;
   padding: 10px;
 }
-ul{
+.navbaruli{
   list-style-type: none;
   display: inline-flex;
   margin: 0;
   padding: 0;
+  background-color: #002F6D;
 }
-li{
+#navbarli{
   margin-right: 20px;
   cursor: pointer;
   color: #D9D9D9;
   font-size: 34px;
+  background-color: #002F6D;
+}
+ul{
+  top: 100%;
+}
+li{
+  top: 100%;
+  cursor: pointer;
+  font-size: 10pt;
+  text-decoration: none;
+  color: #002F6D;
+  background-color: white;
 }
 nav ul li.active{
   color: #D9D9D9 ;
@@ -100,6 +113,92 @@ body{
   color: #D9D9D9;
   font-size: 34px;
   text-decoration: none;
+}
+#eduinfo{
+  text-align: center;
+}
+#pinfo{
+  font-size: 12pt;
+}
+#uniinfo{
+  font-size: 20pt;
+}
+#timeinfo{
+  font-size: 15pt;
+  font-weight: lighter;
+}
+.custom-button{
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  /*border-style: none;*/
+  border-color: #80B0F8;
+  background-color: #80B0F8;
+  color: white;
+  width: 200px;
+  height: 30px;
+  cursor: pointer;
+}
+#options{
+  cursor: pointer; /* Set a maximum width for the li items */
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  overflow: hidden; /* Hide content that overflows the maximum width */
+  text-overflow: ellipsis;
+}
+#option{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 100%; /* Position the dropdown right below the button */
+  left: 0;
+  transform: translateX(45%); /* Center the dropdown horizontally */
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: max-content; /* Set the width to match the button's width */
+  text-align: center;
+}
+#option2{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 100%; /* Position the dropdown right below the button */
+  left: 0;
+  transform: translateX(130%); /* Center the dropdown horizontally */
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: max-content; /* Set the width to match the button's width */
+  text-align: center;
+}
+#option3{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 100%; /* Position the dropdown right below the button */
+  left: 0;
+  text-align: left;
+  transform: translateX(35%); /* Center the dropdown horizontally */
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: max-content; /* Set the width to match the button's width */
+  text-align: center;
+}
+.square-container{
+  display: flex;
+  justify-content: center; /*center the squares horizontally*/
+}
+.square{
+  height: 351px;
+  width: 351px;
+  background-color: #002F6D;
+  border: 2px solid white;
+  border-radius: 35px; /*rounds the corner*/
+  margin-right: 0px;/*add margin between squares*/
 }
 
 @keyframes fadeIn {
