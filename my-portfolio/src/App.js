@@ -18,24 +18,163 @@ const NavBar = () => {
       });
     }
   };
+
   return(
     <nav>
-      <ul>
-        <li className={activeLink === 'home' ? 'active' : ''}>
-          <a href="#home" onClick={(e) => handleLinkClick(e, 'home')}>//home  </a></li>
-        <li className={activeLink === 'aboutme' ? 'active' : ''}>
-          <a href="#aboutme">//about me  </a></li>
-        <li className={activeLink === 'education' ? 'active' : ''}>
-          <a href="#education">//education  </a></li>
-        <li className={activeLink === 'projects' ? 'active' : ''}>
-          <a href="#projects">//projects  </a></li>
-        <li>//resume  </li>
-        <li className={activeLink === 'contact' ? 'active' : ''}>
-          <a href="#contact">//contact  </a></li>
+      <ul className='navbaruli'>
+        <li id="navbarli" className={activeLink === 'home' ? 'active' : ''}>
+          <a href="#home" id="navbar" onClick={(e) => handleLinkClick(e, 'home')}>//home  </a></li>
+        <li id="navbarli" className={activeLink === 'aboutme' ? 'active' : ''}>
+          <a href="#aboutme" id="navbar">//about me  </a></li>
+        <li id="navbarli" className={activeLink === 'education' ? 'active' : ''}>
+          <a href="#education" id="navbar">//education  </a></li>
+        <li id="navbarli" className={activeLink === 'projects' ? 'active' : ''}>
+          <a href="#projects" id="navbar">//projects  </a></li>
+        <li id="navbarli"> //resume  </li>
+        <li id="navbarli" className={activeLink === 'contact' ? 'active' : ''}>
+          <a href="#contact" id="navbar">//contact  </a></li>
       </ul>
     </nav>
+  );
+};
+
+const Button = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedOption, setSelectedOption] = useState('');
+
+  const handlerOptionSelect = (option) => {
+    setSelectedOption(option);
+    setIsOpen(false);
+  }
+
+  return (
+    <div >
+      <button onClick={() => setIsOpen(!isOpen)} className="custom-button">
+        COURSEWORK
+      </button>
+      {isOpen && (
+        <ul id="option">
+          <li id="options" onClick={() => handlerOptionSelect('Option 1')}>AI Topics in Image Processing</li>
+          <li id="options" onClick={() => handlerOptionSelect('Option 2')}>Advanced Database Design</li>
+        </ul>
+      )}
+    </div>
+  );
+};
+
+const Button2 = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedOption, setSelectedOption] = useState('');
+
+  const handlerOptionSelect = (option) => {
+    setSelectedOption(option);
+    setIsOpen(false);
+  }
+
+  return (
+    <div >
+      <button onClick={() => setIsOpen(!isOpen)} className="custom-button">
+        COURSEWORK
+      </button>
+      {isOpen && (
+        <ul id="option2">
+          <li id="options" onClick={() => handlerOptionSelect('Option 1')}>Database Design & Implementation</li>
+          <li id="options" onClick={() => handlerOptionSelect('Option 1')}>Automata, Formal Language & Comp</li>
+          <li id="options" onClick={() => handlerOptionSelect('Option 1')}>Algorithms & Data Structures</li>
+          <li id="options" onClick={() => handlerOptionSelect('Option 1')}>Software Engineering I/II</li>
+          <li id="options" onClick={() => handlerOptionSelect('Option 1')}>Web Development</li>
+          <li id="options" onClick={() => handlerOptionSelect('Option 1')}>Mathematical Foundation of CS</li>
+          <li id="options" onClick={() => handlerOptionSelect('Option 1')}>Computer Networks</li>
+          <li id="options" onClick={() => handlerOptionSelect('Option 1')}>OOP in Python</li>
+        </ul>
+      )}
+    </div>
+  );
+};
+
+const Button3 = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedOption, setSelectedOption] = useState('');
+
+  const handlerOptionSelect = (option) => {
+    setSelectedOption(option);
+    setIsOpen(false);
+  }
+
+  return (
+    <div >
+      <button onClick={() => setIsOpen(!isOpen)} className="custom-button">
+        COURSEWORK
+      </button>
+      {isOpen && (
+        <ul id="option3">
+          <li id="options" onClick={() => handlerOptionSelect('Option 1')}>Business Information Management</li>
+          <li id="options" onClick={() => handlerOptionSelect('Option 2')}>Principles of Information Technology</li>
+        </ul>
+      )}
+    </div>
+  );
+};
+
+const Square1 = () => {
+  return <div className="square">
+    <p id="pinfo">Masters of Science in Computer Science</p>
+    <h1 id="uniinfo">University of Texas Rio Grande Valley</h1>
+    <h5 id="timeinfo">January 2024 - Present</h5>
+    <Button />
+  </div>;
+};
+
+const Square2 = () => {
+  return <div className="square">
+    <p id="pinfo">Bachelors of Science in Computer Science</p>
+    <h1 id="uniinfo">University of Texas Rio Grande Valley</h1>
+    <h5 id="timeinfo">August 2020 - December 2023</h5>
+    <Button2 />
+  </div>;
+};
+
+const Square3 = () => {
+  return <div className="square">
+    <p id="pinfo">Associates of Arts in Interdisciplinary Studies</p>
+    <h1 id="uniinfo">South Texas College</h1>
+    <h5 id="timeinfo">January 2017 - May 2020</h5>
+    <Button3 />
+  </div>;
+};
+
+const SquareContainer = () => {
+  return (
+    <div className='square-container'>
+      <Square1 />
+      <Square2 />
+      <Square3 />
+    </div>
+  );
+};
+
+const AboutMeInfo = () => {
+  return(
+    <p>   Hello, welcome to my digital domain! My name is Alenis Chavarria, a new Computer Science graduate from <a href="https://www.utrgv.edu/" id="utrgv">the University of Texas-Rio Grande Valley</a>. 
+    I'm currently pursuing my Masters of Science in Computer Science at my Alma Mater. As can be noticed in the homepage, I'm interested in various fields 
+    within the Technology Industry, from Software Engineering to Mobile App Development to UX/UI.</p>
   )
 }
+
+const EducationInfo = () => {
+
+  return (
+    <>
+    <div id="eduinfo">
+      <SquareContainer />
+    </div>
+    </>
+  )
+}
+
+const ProjectsInfo = () => {}
+
+const ContactInfo = () => {}
 
 function App() {
   useEffect(() => {
@@ -56,7 +195,7 @@ function App() {
           <NavBar />
                   <h1 className="myName">ALENIS CHAVARRIA</h1>
                   <div className="sliding-box">
-                  <h1 className="myJobAspirations">SOFTWARE ENGINEER, <br/> FULL - STACK, APP, WEB, & UX/UI DEVELOPER</h1>
+                  <h1 className="myJobAspirations">ASPIRING SOFTWARE ENGINEER, <br/> FULL - STACK, APP, WEB, & UX/UI DEVELOPER</h1>
                   </div>
         </section>
         
@@ -64,18 +203,23 @@ function App() {
       <main>
         <section id="aboutme">
           <h1>About Me</h1> 
-          <p>COMING SOON</p>
+          <div id="aboutmeinfo">
+            <AboutMeInfo />
+          </div>
         </section>
         <section id="education">
           <h1>Education</h1>
-          <p>COMING SOON</p>
+            <EducationInfo />
+         
         </section>
         <section id="projects">
           <h1>Projects</h1>
+            <ProjectsInfo />
           <p>COMING SOON</p>
         </section>
         <section id="contact">
           <h1>Contact Me</h1>
+            <ContactInfo />
           <p>COMING SOON</p>
         </section>
       </main>
