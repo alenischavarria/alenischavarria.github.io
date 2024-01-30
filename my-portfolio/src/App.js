@@ -78,7 +78,14 @@ const Button2 = () => {
       </button>
       {isOpen && (
         <ul id="option2">
-          <li id="options" onClick={() => handlerOptionSelect('Option 1')}>COMING SOON</li>
+          <li id="options" onClick={() => handlerOptionSelect('Option 1')}>Database Design & Implementation</li>
+          <li id="options" onClick={() => handlerOptionSelect('Option 1')}>Automata, Formal Language & Comp</li>
+          <li id="options" onClick={() => handlerOptionSelect('Option 1')}>Algorithms & Data Structures</li>
+          <li id="options" onClick={() => handlerOptionSelect('Option 1')}>Software Engineering I/II</li>
+          <li id="options" onClick={() => handlerOptionSelect('Option 1')}>Web Development</li>
+          <li id="options" onClick={() => handlerOptionSelect('Option 1')}>Mathematical Foundation of CS</li>
+          <li id="options" onClick={() => handlerOptionSelect('Option 1')}>Computer Networks</li>
+          <li id="options" onClick={() => handlerOptionSelect('Option 1')}>OOP in Python</li>
         </ul>
       )}
     </div>
