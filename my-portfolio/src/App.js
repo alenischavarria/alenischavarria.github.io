@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import React, {useEffect, useState} from 'react';
-import './LogoCarousel.css';
 //import {useSpring, animated} from 'react-spring';
 
 const NavBar = () => {
@@ -50,6 +49,12 @@ const LogoCarousel = ({ logos }) => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? logos.length - 1 : prevIndex - 1));
   };
 
+  useEffect(() => {
+    const intervalId = setInterval(nextSlide, 1000); 
+    
+    return () => clearInterval(intervalId); 
+  }, []); 
+
   return (
     <div className="logo-carousel">
       <div className="carousel-wrapper">
@@ -73,12 +78,6 @@ const LogoCarousel = ({ logos }) => {
 
 const Button = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState('');
-
-  const handlerOptionSelect = (option) => {
-    setSelectedOption(option);
-    setIsOpen(false);
-  }
 
   return (
     <div >
@@ -97,12 +96,6 @@ const Button = () => {
 
 const Button2 = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState('');
-
-  const handlerOptionSelect = (option) => {
-    setSelectedOption(option);
-    setIsOpen(false);
-  }
 
   return (
     <div >
@@ -127,12 +120,7 @@ const Button2 = () => {
 
 const Button3 = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState('');
 
-  const handlerOptionSelect = (option) => {
-    setSelectedOption(option);
-    setIsOpen(false);
-  }
 
   return (
     <div >
@@ -207,8 +195,8 @@ const EducationInfo = () => {
 
 const ProjectsInfo = () => {
   const logos = [
-    //https://raw.githubusercontent.com/alenischavarria/alenischavarria.github.io/main//Users/alenisgchavarria/Documents/GitHub/myportfolio./my-portfolio/src/ComingSoon.jpeg
-
+    'https://github.com/alenischavarria/alenischavarria.github.io/blob/Branch3/Coming%20Soon%20-%20Free%20photo%20on%20Pixabay.jpeg?raw=true',
+    'https://github.com/alenischavarria/alenischavarria.github.io/blob/Branch3/Download%20Coming%20Soon%20Text%20Label%20Vector%20Template%20Design%20Illustration%20for%20free.jpeg?raw=true'
   ]
   return (
     <>
@@ -253,12 +241,10 @@ function App() {
         <section id="education">
           <h1>Education</h1>
             <EducationInfo />
-         
         </section>
         <section id="projects">
           <h1>Projects</h1>
             <ProjectsInfo />
-          <p>COMING SOON</p>
         </section>
         <section id="contact">
           <h1>Contact Me</h1>
