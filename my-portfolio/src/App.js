@@ -196,7 +196,7 @@ const EducationInfo = () => {
 const ProjectsInfo = () => {
   const logos = [
     'https://github.com/alenischavarria/alenischavarria.github.io/blob/Branch3/Coming%20Soon%20-%20Free%20photo%20on%20Pixabay.jpeg?raw=true',
-    'https://github.com/alenischavarria/alenischavarria.github.io/blob/Branch3/Download%20Coming%20Soon%20Text%20Label%20Vector%20Template%20Design%20Illustration%20for%20free.jpeg?raw=true'
+    'https://github.com/alenischavarria/alenischavarria.github.io/blob/Branch3/Download%20Coming%20Soon%20Text%20Label%20Vector%20Template%20Design%20Illustration%20for%20free.jpeg?raw=true',
   ]
   return (
     <>
