@@ -238,3 +238,77 @@ body{
   color: white;
 }
 
+.logo-carousel {
+  margin: 20px auto;
+}
+
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 250px; /* Adjust the height as needed */
+  background-color: #80B0F8;
+  border-radius: 5%;
+  border: 5px solid white;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide.active {
+  display: block;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  border-radius: 15%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+/* Example of media query for smaller screens */
+@media screen and (max-width: 970px) {
+  nav {
+    padding: 5px;
+  }
+  .navbaruli {
+    flex-direction: column;
+  }
+  #navbarli {
+    margin: 5px;
+    font-size: 20pt;
+  }
+  .myName {
+    padding-top: 40px;
+    font-size: 60px;
+  }
+  .myJobAspirations {
+    margin: 0px;
+    font-size: 25px;
+  }
+  #aboutmeinfo{
+    margin-left: 10%;
+    padding: 5px;
+    font-size: 15pt;
+  }
+}
