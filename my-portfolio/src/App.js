@@ -1,4 +1,5 @@
-import logo from './logo.svg';
+import { IoLogoLinkedin } from "react-icons/io";
+import { HiOutlineMail } from "react-icons/hi";
 import './App.css';
 import React, {useEffect, useState} from 'react';
 //import {useSpring, animated} from 'react-spring';
@@ -205,7 +206,22 @@ const ProjectsInfo = () => {
   )
 }
 
-const ContactInfo = () => {}
+const ContactInfo = () => {
+  
+return(
+  <>
+  <div className= "allCI">
+    <div className="LinkedInContact">
+      <IoLogoLinkedin /> <a href="https://www.linkedin.com/in/alenis-chavarria-15602a251/" target="_blank">Message me on LinkedIn</a>
+    </div>
+    <div className="EmailContact">
+      <HiOutlineMail /> <a href="mailto:alenis.in.stem@gmail.com" >Email me for inquiries</a>
+    </div>
+  </div>
+  </>
+)
+
+}
 
 function App() {
   useEffect(() => {
@@ -249,7 +265,6 @@ function App() {
         <section id="contact">
           <h1>Contact Me</h1>
             <ContactInfo />
-          <p>COMING SOON</p>
         </section>
       </main>
       <footer></footer>

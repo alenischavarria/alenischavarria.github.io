@@ -286,13 +286,32 @@ body{
   right: 0;
 }
 
-/* Example of media query for smaller screens */
+
+.LinkedInContact{
+  font-size: 40pt;
+}
+.LinkedInContact a{
+  text-decoration: none;
+  color:#80B0F8;
+  text-align: center;
+}
+
+.EmailContact{
+  font-size: 40pt;
+  margin-bottom: 5%;
+}
+.EmailContact a{
+  text-decoration: none;
+  color:#80B0F8;
+  text-align: center;
+}
 @media screen and (max-width: 970px) {
   nav {
     padding: 5px;
   }
   .navbaruli {
-    flex-direction: column;
+    flex-direction: row;
+    font-size: 10pt;
   }
   #navbarli {
     margin: 5px;
