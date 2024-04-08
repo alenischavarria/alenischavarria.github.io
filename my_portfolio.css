@@ -1,4 +1,4 @@
-h1, h2{
+h1, h2, h3, h4{
     color: #DEDEE0;
 }
 body{
@@ -23,6 +23,27 @@ nav{
 
 .homeinfo{
     text-align: center;
+}
+
+.aboutmeinfo{
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.eduinfo{
+    text-align: center;
+}
+
+.card{
+    /* margin: 0 auto; */
+    /* margin-left: 25pt; */
+    margin-right: 10pt;
+    margin-top: 5pt;
+    margin-bottom: 20pt;
 }
 
 .tag-list{
