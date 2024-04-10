@@ -38,6 +38,11 @@ nav{
     text-align: center;
 }
 
+.list-group{
+    padding-left: 300pt;
+    padding-right: 300pt;
+}
+
 .card{
     /* margin: 0 auto; */
     /* margin-left: 25pt; */
@@ -95,3 +100,58 @@ nav{
         transform: translate(calc(-50% - 0.5rem));
     }
 }
+
+#myinterests{
+    /* margin-right:20pt; */
+    justify-content: center;
+}
+
+/* #tech{
+    margin-right: 20pt;
+}
+
+#non-tech{
+    margin-left: 70pt;
+} */
+
+#rowofbuttons{
+    justify-content: center;
+}
+
+#rowofcollapse{
+    justify-content: center;
+}
+
+#multiCollapseExample1{
+    padding-left: 140pt;
+}
+
+.carousel-item img{
+    max-width: 50%; /* Set the maximum width to 100% */
+    height: auto;
+}
+
+.carousel-caption{
+    box-shadow: 10pt;
+}
+.carousel-caption h5{
+    color: #88C035;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+
+}
+.carousel-caption p{
+    color: #899499;
+}
+
+.titlewbadge{
+    display:inline-flex;
+    align-items: center;
+}
+
+.titlewbadge h5 {
+    margin-right: 10px; 
+}
+/* #multiCollapseExample2{
+    padding-right: 151pt;
+    padding-left: 0pt;
+} */
