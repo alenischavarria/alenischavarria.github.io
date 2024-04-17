@@ -11,6 +11,10 @@ nav{
 
 .navbar-brand{
     color: #88C035;
+    font-size: 35px;
+}
+.nav-brand:hover{
+    color: #3F84E5;
 }
 
 .nav-link{
@@ -21,12 +25,27 @@ nav{
     color: #3F84E5;
 }
 
+.nav-item{
+    font-size: 35px;
+}
+
 .homeinfo{
     text-align: center;
+}
+.homeinfo h1{
+    padding-top: 100pt;
+    font-size: 92px;
+}
+.homeinfo h2{
+    font-size: 52px;
 }
 
 .aboutmeinfo{
     text-align: center;
+}
+.aboutmeinfo h2{
+    font-size: 45px;
+    padding-bottom: 10pt;
 }
 
 .row{
@@ -36,6 +55,10 @@ nav{
 
 .eduinfo{
     text-align: center;
+}
+.eduinfo h2{
+    font-size: 45px;
+    padding: 10pt;
 }
 
 .list-group{
@@ -64,6 +87,22 @@ nav{
     box-shadow: 0 0.5rem 1rem -0.25rem  #899499;
 }
 
+.myprojects{
+    text-align: center;
+}
+.myprojects h2{
+    font-size: 45px;
+    padding: 10pt;
+}
+
+.contactme{
+    text-align: center;
+}
+.contactme h2{
+    font-size: 45px;
+    padding: 10pt;
+}
+
 .scroller{
     /* justify-items: center; */
     margin: 0 auto;
@@ -80,6 +119,7 @@ nav{
     );
 
     mask: linear-gradient(90deg, transparent, white 100%, white 100%, transparent);
+    padding-bottom: 170pt;
 }
 
 .scroller__inner{
@@ -101,18 +141,54 @@ nav{
     }
 }
 
+.list-group-item{
+    background-color: #3F84E5;
+    color: #DEDEE0;
+    border-color: #3F84E5;
+}
+.list-group-item:hover{
+    background-color: #88C035;
+    color: #DEDEE0;
+    border-color: #88C035;
+}
+
 #myinterests{
     /* margin-right:20pt; */
     justify-content: center;
+    background-color:#88C035;
+    border-color: #88C035;
+}
+#myinterests:hover{
+    background-color:#3F84E5;
+    border-color: #3F84E5;
 }
 
-/* #tech{
-    margin-right: 20pt;
+#tech{
+    background-color:#88C035;
+    border-color: #88C035;
+}
+#tech:hover{
+    background-color:#3F84E5;
+    border-color: #3F84E5;
 }
 
 #non-tech{
-    margin-left: 70pt;
-} */
+    background-color:#88C035;
+    border-color: #88C035;
+}
+#non-tech:hover{
+    background-color:#3F84E5;
+    border-color: #3F84E5;
+}
+
+#coursework{
+    background-color:#3F84E5;
+    border-color: #3F84E5;
+}
+#coursework:hover{
+    background-color:#2d61a9;
+    border-color: #3166b0;
+}
 
 #rowofbuttons{
     justify-content: center;
@@ -143,6 +219,22 @@ nav{
     color: #899499;
 }
 
+.bi-github{
+    font-size: 50pt;
+    color: #DEDEE0;
+    text-shadow: 3px 2px 1px rgb(63, 132, 229,.5);
+}
+.bi-linkedin{
+    font-size: 50pt;
+    color: #DEDEE0;
+    text-shadow: 3px 2px 1px rgb(63, 132, 229,.5);
+}
+.bi-envelope{
+    font-size: 50pt;
+    color: #DEDEE0;
+    text-shadow: 3px 2px 1px rgb(63, 132, 229,.5);
+}
+
 .titlewbadge{
     display:inline-flex;
     align-items: center;
@@ -151,7 +243,44 @@ nav{
 .titlewbadge h5 {
     margin-right: 10px; 
 }
-/* #multiCollapseExample2{
-    padding-right: 151pt;
-    padding-left: 0pt;
-} */
+
+.text-bg-DEFINE{
+    background-color:#A22522 ;
+    color:white;
+}
+.text-bg-RESEARCH{
+    background-color: #C33149;
+    color:white;
+}
+.text-bg-AP{
+    background-color: #FB8B24 ;
+    color: white;
+}
+.text-bg-DESIGN{
+    background-color: #A8C256 ;
+    color:white;
+}
+.text-bg-PROTOTYPING{
+    background-color:#007CBE ;
+    color:white;
+}
+.text-bg-TESTING{
+    background-color: #53A2BE ;
+    color: white;
+}
+.text-bg-LAUNCH{
+    background-color:#1D84B5 ;
+    color:white;
+}
+.text-bg-ITR{
+    background-color:#0A2239 ;
+    color:white;
+}
+.text-bg-MA{
+    background-color:white ;
+    color:#79B791 ;
+}
+.text-bg-WS{
+    background-color:white ;
+    color: #F3D34A ;
+}
