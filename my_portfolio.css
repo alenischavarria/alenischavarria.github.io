@@ -53,6 +53,10 @@ nav{
     justify-content: center;
 }
 
+.row2{
+    display: flex;
+}
+
 .eduinfo{
     text-align: center;
 }
@@ -283,4 +287,20 @@ nav{
 .text-bg-WS{
     background-color:white ;
     color: #F3D34A ;
+}
+
+.paragraph{
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.span{
+    font-weight: bold; 
+    color: #C2E812;
+}
+
+.fw{
+    font-weight: bold; 
+    color: #2274A5;
 }
