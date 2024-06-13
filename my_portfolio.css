@@ -304,3 +304,28 @@ nav{
     font-weight: bold; 
     color: #2274A5;
 }
+
+.btn-C1{
+    background-color: #E396DF;
+    color: #FFF;
+}
+.btn-C2{
+    background-color: #E365C1;
+    color: #FFF;
+}
+.btn-C3{
+    background-color: #DA2FAD;
+    color: #FFF;
+}
+.btn-C4{
+    background-color: #D312A0;
+    color: #FFF;
+}
+.btn-C5{
+    background-color: #FA38C6;
+    color: #FFF;
+}
+.btn-C6{
+    background-color: #F918BD;
+    color: #FFF;
+}
