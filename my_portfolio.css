@@ -13,8 +13,12 @@ nav{
     color: #88C035;
     font-size: 35px;
 }
-.nav-brand:hover{
+.navbar-brand:hover{
     color: #3F84E5;
+}
+
+.navbar-nav{
+    padding-left: 14rem;
 }
 
 .nav-link{
