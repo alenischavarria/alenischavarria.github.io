@@ -17,6 +17,9 @@ nav{
 .navbar-brand:hover{
     color: #3F84E5;
 }
+.navbar-brand::after{
+    color: #3F84E5
+}
 
 .navbar-nav{
     padding-left: 14rem;
