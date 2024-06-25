@@ -1,0 +1,47 @@
+h1, h2, h3, h4{
+    color: #DEDEE0;
+}
+
+body{
+    background-color: #0E103D;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav{
+    background-color: transparent;
+}
+
+.navbar-brand{
+    color: #88C035;
+    font-size: 35px;
+}
+.navbar-brand:hover{
+    color: #3F84E5;
+}
+.navbar-brand::after{
+    color: #3F84E5
+}
+
+.navbar-nav{
+    padding-left: 14rem;
+}
+
+.nav-link{
+    color: #DEDEE0;
+}
+
+.nav-link:hover{
+    color: #3F84E5;
+}
+
+.nav-item{
+    font-size: 35px;
+}
+
+.aboutmeinfo{
+    text-align: center;
+}
+.aboutmeinfo h2{
+    font-size: 45px;
+    padding-bottom: 10pt;
+}
