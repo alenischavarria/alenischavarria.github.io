@@ -40,8 +40,104 @@ nav{
 
 .aboutmeinfo{
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutmeinfo .col{
+    padding-top: 20pt;
 }
 .aboutmeinfo h2{
     font-size: 45px;
     padding-bottom: 10pt;
+}
+.aboutmeinfo img{
+    padding: 1rem;
+    width: 400px;
+    height: 500px;
+    object-fit:cover;
+    border-radius: 3rem;
+    animation: float 1.5s ease-out infinite;
+}
+
+
+.timeline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 9%;
+}
+
+.timeline .timeline-row{
+    display: flex;
+    column-gap: 64px;
+}
+
+.timeline-column .title{
+    font-size: 28px;
+    margin: 32px 0 16px 30px;
+}
+
+.timeline-column .timeline-box{
+    border-left: 2px solid #0ef;
+}
+
+.timeline-box .timeline-content{
+    position: relative;
+    padding-left: 27px;
+}
+
+.timeline-box .timeline-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10.5px;
+    width: 20px;
+    height: 20px;
+    background: #0ef;
+    border-radius: 50%;
+}
+
+.timeline-content .content{
+   padding: 24px;
+   border: 2px solid #0ef;
+   border-radius: 8px;
+   margin-bottom: 32px; 
+}
+
+.timeline-content .year{
+    font-size: 16px;
+    color: #0ef;
+}
+
+.timeline-content .content .year{
+    margin-right: 8px;
+}
+
+.timeline-content .content p {
+    font-size: 16px;
+    color: #FFF;
+}
+
+@keyframes float{
+    50%{
+        transform: translateY(20px);
+    }
+}
+#shadow{
+    position: absolute;
+    height: 20px;
+    top: 87%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    filter: blur(3px);
+    animation: shrink 1.5s ease-out infinite;
+}
+@keyframes shrink{
+    0%{width:30%}
+    50%{width: 20%}
+    100%{width: 30%}
 }
