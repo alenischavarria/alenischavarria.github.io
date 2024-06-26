@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 h1, h2, h3, h4, p, h5, h6{
     color: #DEDEE0;
 }
@@ -12,6 +18,14 @@ nav{
 }
 i{
     color: #FFF;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 
 .navbar-brand{
@@ -88,6 +102,7 @@ i{
     align-items: center;
     min-height: 100vh;
     padding: 0 9%;
+    margin-top:50px;
 }
 
 .timeline .timeline-row{
@@ -150,10 +165,11 @@ i{
 
 .myeducation h2{
     font-size: 45px;
+    text-align: center;
 }
 .myeducation hr{
     border: none;
-    width: 250px;
+    width: 400px;
     height: 1px;
     background-color: white;
     border-radius: 10px;
@@ -188,6 +204,57 @@ i{
     color: gray;
 }
 
+.mylanguages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+.mylanguages .title{
+    display: center;
+    justify-content:center;
+    align-items: center;
+}
+.mylanguages .title h3{
+    font-size: 45px;
+}
+.mylanguages .title hr{
+    border: none;
+    width: 450px;
+    height: 1px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 0px;
+}
+
+.mylanguages .title #frameworks{
+    padding-top: 300px;
+}
+
+.mylanguages .title #interests{
+    margin-top: 10px;
+}
+.mylanguages .title #hrframeworks{
+    border: none;
+    width: 450px;
+    height: 1px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 0px;
+}
+.mylanguages .title #clubs{
+    padding-top: 100px;
+}
+.mylanguages .title #hrclubs{
+    border: none;
+    width: 750px;
+    height: 1px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 0px;
+}
+
 .vertical-line{
     height: 50px;
     margin: 10px;
@@ -197,6 +264,50 @@ i{
 
 .text-bg-light{
     border: 2px solid gray;
+}
+
+.langBars{
+    display: flex;
+    flex-wrap: wrap;
+    color: #FFF;
+}
+.container1{
+    width: 500px;
+    height: 300px;
+    /* padding: 75px 90px; */
+    padding-left: 75px;
+    margin-left: 120px;
+    margin-top: 0px;
+}
+.bar{
+    font-size: 23px;
+}
+.Technical-Bars .bar{
+    margin: 20px 0;
+}
+.Technical-Bars .bar:first-child{
+    margin-top:0;
+}
+.Technical-Bars .bar:last-child{
+    margin-bottom: 0;
+}
+.Technical-Bars .bar .info{
+    margin-bottom: 5px;
+}
+.Technical-Bars .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+}
+.Technical-Bars .bar .progress-line{
+    position:relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
 }
 
 
@@ -220,4 +331,111 @@ i{
     0%{width:30%}
     50%{width: 20%}
     100%{width: 30%}
+}
+
+@keyframes animate{
+    100%{
+        transform:scaleX(1);
+
+    }
+}
+.Technical-Bars .bar .progress-line span{
+    height: 100%;
+    background-color: #0ef;
+    /* width: 90%; */
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.progress-line.html span{
+    width: 75%;
+}
+.progress-line.css span{
+    width: 75%;
+}
+.progress-line.js span{
+    width: 70%;
+}
+.progress-line.python span{
+    width: 60%;
+}
+.progress-line.cplusplus span{
+    width: 55%;
+}
+.progress-line.flutter span{
+    width: 50%;
+}
+.progress-line.rubyOR span{
+    width: 40%;
+}
+.progress-line.reactJS span{
+    width: 50%;
+}
+.progress-line.nodeJS span{
+    width: 50%;
+}
+
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #FFF;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+.progress-line.html span::after{
+    content: "75%";
+}
+.progress-line.css span::after{
+    content: "75%";
+}
+.progress-line.js span::after{
+    content: "70%";
+}
+.progress-line.python span::after{
+    content: "60%";
+}
+.progress-line.cplusplus span::after{
+    content: "55%";
+}.progress-line.flutter span::after{
+    content: "50%";
+}
+.progress-line.rubyOR span::after{
+    content: "40%";
+}
+.progress-line.reactJS span::after{
+    content: "50%";
+}
+.progress-line.nodeJS span::after{
+    content: "50%";
+}
+
+.progress-line span::before{
+    content:"";
+    position: absolute;
+    width:0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    border-radius: 3px;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+@keyframes showText{
+    100%{
+        opacity:1;
+
+    }
 }
