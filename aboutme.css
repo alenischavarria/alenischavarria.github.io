@@ -10,6 +10,9 @@ body{
 nav{
     background-color: transparent;
 }
+i{
+    color: #FFF;
+}
 
 .navbar-brand{
     color: #88C035;
@@ -161,11 +164,28 @@ nav{
     justify-content:center;
     align-items: center;
 }
+
+.campus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+}
+
 .college-uni{
     display: flex;
     justify-content: center;
     align-items: center;
     /* background-color: #0ef; */
+}
+.college-uni .almamater{
+    display: flex;
+}
+.college-uni .almamater h6{
+    color: gray;
+}
+.college-uni .almamater i{
+    color: gray;
 }
 
 .vertical-line{
@@ -174,6 +194,11 @@ nav{
     border-left: 1px solid white;
     
 }
+
+.text-bg-light{
+    border: 2px solid gray;
+}
+
 
 @keyframes float{
     50%{
