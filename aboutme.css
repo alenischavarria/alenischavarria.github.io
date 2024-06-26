@@ -1,4 +1,4 @@
-h1, h2, h3, h4{
+h1, h2, h3, h4, p, h5, h6{
     color: #DEDEE0;
 }
 
@@ -52,14 +52,32 @@ nav{
     padding-bottom: 10pt;
 }
 .aboutmeinfo img{
-    padding: 1rem;
+    margin-right: 93px;
     width: 400px;
     height: 500px;
     object-fit:cover;
     border-radius: 3rem;
     animation: float 1.5s ease-out infinite;
 }
+.aboutmeinfo .text-container{
+    padding-left: 75px;
+    padding-right: 90px;
+}
 
+.aboutmeinfo .text-container .badge{
+    margin-top: 10pt;
+}
+
+.text-container{
+    padding-left: 75px;
+    padding-right: 90px;
+}
+
+.education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .timeline{
     display: flex;
@@ -118,6 +136,43 @@ nav{
 .timeline-content .content p {
     font-size: 16px;
     color: #FFF;
+}
+
+.myeducation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.myeducation h2{
+    font-size: 45px;
+}
+.myeducation hr{
+    border: none;
+    width: 250px;
+    height: 1px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.myeducation .title{
+    display: grid;
+    justify-content:center;
+    align-items: center;
+}
+.college-uni{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #0ef; */
+}
+
+.vertical-line{
+    height: 50px;
+    margin: 10px;
+    border-left: 1px solid white;
+    
 }
 
 @keyframes float{
