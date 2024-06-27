@@ -1,0 +1,139 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4{
+    color: #DEDEE0;
+}
+body{
+    background-color: #0E103D;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav{
+    background-color: transparent;
+}
+
+.navbar-brand{
+    color: #88C035;
+    font-size: 35px;
+}
+.navbar-brand:hover{
+    color: #3F84E5;
+}
+.navbar-brand::after{
+    color: #3F84E5
+}
+
+.navbar-nav{
+    padding-left: 14rem;
+}
+
+.nav-link{
+    color: #DEDEE0;
+}
+
+.nav-link:hover{
+    color: #3F84E5;
+}
+
+.nav-item{
+    font-size: 35px;
+}
+
+.projects{
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.text-bg-custom{
+    background-color: #3F84E5;
+    color: #FFF;
+}
+
+.card{
+    overflow: hidden;
+}
+
+.card:hover .card-body{
+    right: 0;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    transition: .4s;
+}
+
+.card-body a{
+    text-decoration: none;
+}
+
+.card-btn{
+    background-color:#88C035;
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.myeducation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.myeducation h2{
+    font-size: 45px;
+    text-align: center;
+}
+.myeducation hr{
+    border: none;
+    width: 400px;
+    height: 1px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.myeducation .title{
+    display: grid;
+    justify-content:center;
+    align-items: center;
+}
+.card-text#sp3{
+    color: #FFF;
+}
+.card-title#sp3{
+    color: #FFF;
+}
+
+.card-text#ma2{
+    color: #FFF;
+}
+.card-title#ma2{
+    color: #FFF;
+}
+
+.card-text#wa1{
+    color: #FFF;
+}
+.card-title#wa1{
+    color: #FFF;
+}
