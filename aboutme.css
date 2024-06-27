@@ -439,3 +439,37 @@ i{
 
     }
 }
+
+@keyframes animate-in {
+    0%{
+		opacity: 0; 
+        transform: translateY(100%);
+	}
+	100% {
+		opacity: 1; 
+        transform: translateY(0);
+	}
+}
+
+@keyframes animate-out {
+	0%{
+		opacity: 1; 
+        transform: translateY(0);
+	}
+	100% {
+		opacity: 0; 
+        transform: translateY(-100%);
+	}
+}
+
+/* .langBars .bar {
+    opacity: 0;
+    transform: translateY(100%);
+	animation: opacity 1s ease, transform 1s ease;
+} */
+.langBars .bar.in-view{
+    animation: animate-in 1s forwards;
+}
+.langBars .bar.out-view{
+    animation: animate-out 1s forwards;
+}
