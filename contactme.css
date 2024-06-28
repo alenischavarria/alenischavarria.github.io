@@ -1,0 +1,135 @@
+h1, h2, h3, h4{
+    color: #DEDEE0;
+}
+body{
+    background-color: #0E103D;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav{
+    background-color: transparent;
+}
+
+.navbar-brand{
+    color: #88C035;
+    font-size: 35px;
+}
+.navbar-brand:hover{
+    color: #3F84E5;
+}
+.navbar-brand::after{
+    color: #3F84E5
+}
+
+.navbar-nav{
+    padding-left: 14rem;
+}
+
+.nav-link{
+    color: #DEDEE0;
+}
+
+.nav-link:hover{
+    color: #3F84E5;
+}
+
+.nav-item{
+    font-size: 35px;
+}
+
+.contact-container{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-left-title h2{
+    font-weight: 600;
+    color: #88C035;
+    font-size: 40px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.contact-left-title hr{
+    border: none;
+    width: 240px;
+    height: 5px;
+    background-color: #88C035;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #3F84E5;
+    border-radius: 50px;
+}
+
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus{
+    border: 2px solid #6D6875;
+}
+
+.contact-inputs::placeholder{
+    color:#3F84E5;
+}
+
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #FFF;
+    gap:10px;
+    border: none;
+    border-radius: 50px;
+    background:#88C035;
+    cursor:pointer;
+}
+
+.bi-github{
+    font-size: 100pt;
+    color: #FFF;
+    text-shadow: 3px 2px 1px #3F84E5;
+}
+.bi-linkedin{
+    font-size: 100pt;
+    color: #FFF;
+    text-shadow: 3px 2px 1px #3F84E5;
+}
+
+.contact-right{
+    display:grid;
+    margin-left: 100px;
+}
+
+.twobuttons{
+    margin-left: 200px;
+    gap: 20px;
+    margin-right: 300px;
+}
+
+#icons{
+    display: table-column;
+    gap: 25px;
+    margin-right: 5rem;
+}

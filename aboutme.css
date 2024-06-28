@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p, h5, h6{
+    color: #DEDEE0;
+}
+
+body{
+    background-color: #0E103D;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav{
+    background-color: transparent;
+}
+i{
+    color: #FFF;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.navbar-brand{
+    color: #88C035;
+    font-size: 35px;
+}
+.navbar-brand:hover{
+    color: #3F84E5;
+}
+.navbar-brand::after{
+    color: #3F84E5
+}
+
+.navbar-nav{
+    padding-left: 14rem;
+}
+
+.nav-link{
+    color: #DEDEE0;
+}
+
+.nav-link:hover{
+    color: #3F84E5;
+}
+
+.nav-item{
+    font-size: 35px;
+}
+
+.aboutmeinfo{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutmeinfo .col{
+    padding-top: 20pt;
+}
+.aboutmeinfo h2{
+    font-size: 45px;
+    padding-bottom: 10pt;
+}
+.aboutmeinfo img{
+    margin-right: 93px;
+    width: 400px;
+    height: 500px;
+    object-fit:cover;
+    border-radius: 3rem;
+    animation: float 1.5s ease-out infinite;
+}
+.aboutmeinfo .text-container{
+    padding-left: 75px;
+    padding-right: 90px;
+}
+
+.aboutmeinfo .text-container .badge{
+    margin-top: 10pt;
+}
+
+.text-container{
+    padding-left: 75px;
+    padding-right: 90px;
+}
+
+.education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 9%;
+    margin-top:50px;
+}
+
+.timeline .timeline-row{
+    display: flex;
+    column-gap: 64px;
+}
+
+.timeline-column .title{
+    font-size: 28px;
+    margin: 32px 0 16px 30px;
+}
+
+.timeline-column .timeline-box{
+    border-left: 2px solid #0ef;
+}
+
+.timeline-box .timeline-content{
+    position: relative;
+    padding-left: 27px;
+}
+
+.timeline-box .timeline-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10.5px;
+    width: 20px;
+    height: 20px;
+    background: #0ef;
+    border-radius: 50%;
+}
+
+.timeline-content .content{
+   padding: 24px;
+   border: 2px solid #0ef;
+   border-radius: 8px;
+   margin-bottom: 32px; 
+}
+
+.timeline-content .year{
+    font-size: 16px;
+    color: #0ef;
+}
+
+.timeline-content .content .year{
+    margin-right: 8px;
+}
+
+.timeline-content .content p {
+    font-size: 16px;
+    color: #FFF;
+}
+
+.myeducation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.myeducation h2{
+    font-size: 45px;
+    text-align: center;
+}
+.myeducation hr{
+    border: none;
+    width: 400px;
+    height: 1px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.myeducation .title{
+    display: grid;
+    justify-content:center;
+    align-items: center;
+}
+
+.campus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+}
+
+.college-uni{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #0ef; */
+}
+.college-uni .almamater{
+    display: flex;
+}
+.college-uni .almamater h6{
+    color: gray;
+}
+.college-uni .almamater i{
+    color: gray;
+}
+
+.mylanguages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+.mylanguages .title{
+    display: center;
+    justify-content:center;
+    align-items: center;
+}
+.mylanguages .title h3{
+    font-size: 45px;
+}
+.mylanguages .title hr{
+    border: none;
+    width: 450px;
+    height: 1px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 0px;
+}
+
+.mylanguages .title #frameworks{
+    padding-top: 300px;
+}
+
+.mylanguages .title #interests{
+    margin-top: 10px;
+}
+.mylanguages .title #hrframeworks{
+    border: none;
+    width: 450px;
+    height: 1px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 0px;
+}
+.mylanguages .title #clubs{
+    padding-top: 100px;
+}
+.mylanguages .title #hrclubs{
+    border: none;
+    width: 750px;
+    height: 1px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 0px;
+}
+
+.vertical-line{
+    height: 50px;
+    margin: 10px;
+    border-left: 1px solid white;
+    
+}
+
+.text-bg-light{
+    border: 2px solid gray;
+}
+
+.langBars{
+    display: flex;
+    flex-wrap: wrap;
+    color: #FFF;
+}
+.container1{
+    width: 500px;
+    height: 300px;
+    /* padding: 75px 90px; */
+    padding-left: 75px;
+    margin-left: 120px;
+    margin-top: 0px;
+}
+.bar{
+    font-size: 23px;
+}
+.Technical-Bars .bar{
+    margin: 20px 0;
+}
+.Technical-Bars .bar:first-child{
+    margin-top:0;
+}
+.Technical-Bars .bar:last-child{
+    margin-bottom: 0;
+}
+.Technical-Bars .bar .info{
+    margin-bottom: 5px;
+}
+.Technical-Bars .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+}
+.Technical-Bars .bar .progress-line{
+    position:relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+
+@keyframes float{
+    50%{
+        transform: translateY(20px);
+    }
+}
+#shadow{
+    position: absolute;
+    height: 20px;
+    top: 87%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    filter: blur(3px);
+    animation: shrink 1.5s ease-out infinite;
+}
+@keyframes shrink{
+    0%{width:30%}
+    50%{width: 20%}
+    100%{width: 30%}
+}
+
+@keyframes animate{
+    100%{
+        transform:scaleX(1);
+
+    }
+}
+.Technical-Bars .bar .progress-line span{
+    height: 100%;
+    background-color: #0ef;
+    /* width: 90%; */
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.progress-line.html span{
+    width: 75%;
+}
+.progress-line.css span{
+    width: 75%;
+}
+.progress-line.js span{
+    width: 70%;
+}
+.progress-line.python span{
+    width: 60%;
+}
+.progress-line.cplusplus span{
+    width: 55%;
+}
+.progress-line.flutter span{
+    width: 50%;
+}
+.progress-line.rubyOR span{
+    width: 40%;
+}
+.progress-line.reactJS span{
+    width: 50%;
+}
+.progress-line.nodeJS span{
+    width: 50%;
+}
+
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #FFF;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+.progress-line.html span::after{
+    content: "75%";
+}
+.progress-line.css span::after{
+    content: "75%";
+}
+.progress-line.js span::after{
+    content: "70%";
+}
+.progress-line.python span::after{
+    content: "60%";
+}
+.progress-line.cplusplus span::after{
+    content: "55%";
+}.progress-line.flutter span::after{
+    content: "50%";
+}
+.progress-line.rubyOR span::after{
+    content: "40%";
+}
+.progress-line.reactJS span::after{
+    content: "50%";
+}
+.progress-line.nodeJS span::after{
+    content: "50%";
+}
+
+.progress-line span::before{
+    content:"";
+    position: absolute;
+    width:0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    border-radius: 3px;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+@keyframes showText{
+    100%{
+        opacity:1;
+
+    }
+}
+
+@keyframes animate-in {
+    0%{
+		opacity: 0; 
+        transform: translateY(100%);
+	}
+	100% {
+		opacity: 1; 
+        transform: translateY(0);
+	}
+}
+
+@keyframes animate-out {
+	0%{
+		opacity: 1; 
+        transform: translateY(0);
+	}
+	100% {
+		opacity: 0; 
+        transform: translateY(-100%);
+	}
+}
+
+/* .langBars .bar {
+    opacity: 0;
+    transform: translateY(100%);
+	animation: opacity 1s ease, transform 1s ease;
+} */
+.langBars .bar.in-view{
+    animation: animate-in 1s forwards;
+}
+.langBars .bar.out-view{
+    animation: animate-out 1s forwards;
+}

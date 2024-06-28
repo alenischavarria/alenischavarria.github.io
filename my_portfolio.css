@@ -1,8 +1,15 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 h1, h2, h3, h4{
     color: #DEDEE0;
 }
 body{
     background-color: #0E103D;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 nav{
@@ -13,8 +20,15 @@ nav{
     color: #88C035;
     font-size: 35px;
 }
-.nav-brand:hover{
+.navbar-brand:hover{
     color: #3F84E5;
+}
+.navbar-brand::after{
+    color: #3F84E5
+}
+
+.navbar-nav{
+    padding-left: 14rem;
 }
 
 .nav-link{
@@ -31,13 +45,24 @@ nav{
 
 .homeinfo{
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .homeinfo h1{
-    padding-top: 100pt;
+    padding-top: 50pt;
     font-size: 92px;
 }
 .homeinfo h2{
     font-size: 52px;
+}
+.homeinfo img{
+    padding: 1rem;
+    width: 400px;
+    height: 500px;
+    object-fit:cover;
+    border-radius: 3rem;
+    animation: float 1.5s ease-out infinite;
 }
 
 .aboutmeinfo{
@@ -328,4 +353,27 @@ nav{
 .btn-C6{
     background-color: #F918BD;
     color: #FFF;
+}
+
+@keyframes float{
+    50%{
+        transform: translateY(30px);
+    }
+}
+#shadow{
+    position: absolute;
+    height: 20px;
+    top: 90%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    filter: blur(3px);
+    animation: shrink 1.5s ease-out infinite;
+}
+
+@keyframes shrink{
+    0%{width:30%}
+    50%{width: 20%}
+    100%{width: 30%}
 }

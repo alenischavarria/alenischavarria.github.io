@@ -9,18 +9,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="my_portfolio.css">
+    <link rel="stylesheet" href="contactme.css">
 
     <title>Alenis's Portfolio</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg" >
-        <div class="container-fluid ">
+    <nav class="navbar navbar-expand-lg " >
+        <div class="container-fluid">
           <a class="navbar-brand" href="my_portfolio.html">Alenis's Portfolio</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse " id="navbarNavDropdown">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link" href="aboutme.html">// about me</a>
@@ -42,37 +42,36 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contactme.html">// contact me</a>
+                <a class="nav-link" href="#contactme">// contact me</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+    
 
-    <div class="homeinfo">
-        <div class="row">
-          <img src="my-headshot.jpeg" alt="A selfie of Alenis">
-          <span id="shadow"></span>
-          <div class="col">
-            <h1>ALENIS CHAVARRIA</h1>
-            <h2>WOMAN IN TECHNOLOGY</h2>
-            <div class="scroller">
-                <ul class="tag-list scroller__inner">
-                    <li>Software Engineer</li>
-                    <li>Frontend Engineer</li>
-                    <li>Mobile App Developer</li>
-                    <li>Web Developer</li>
-                    <li >Software Engineer</li>
-                    <li>Frontend Engineer</li>
-                    <li>Mobile App Developer</li>
-                    <li>Web Developer</li>
-                </ul>
-              </div>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+          <div class="contact-left-title">
+            <h2>Get in touch</h2>
+            <hr>
           </div>
-          
+          <input type="hidden" name="access_key" value="765e7c43-3fef-486d-adcd-2addeb11daec">
+          <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+          <input type="text" name="Subject" placeholder="Message Subject" class="contact-inputs" required>
+          <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+          <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <div class="contact-right">
+            <a href="https://www.linkedin.com/in/alenis-chavarria-15602a251/" target="_blank">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://github.com/alenischavarria" target="_blank">
+                <i class="bi bi-github"></i>
+              </a>
         </div>
-        
-    </div>
+      </div>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
