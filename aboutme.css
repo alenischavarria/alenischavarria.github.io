@@ -443,7 +443,7 @@ i{
 @keyframes animate-in {
     0%{
 		opacity: 0; 
-        transform: translateY(100%);
+        transform: translateY(-100%);
 	}
 	100% {
 		opacity: 1; 
@@ -453,8 +453,8 @@ i{
 
 @keyframes animate-out {
 	100%{
-		opacity: 0; 
-        transform: translateY(100%);
+		opacity: 1; 
+        transform: translateY(-100%);
 	}
 	0% {
 		opacity: 1; 
@@ -462,11 +462,6 @@ i{
 	}
 }
 
-/* .langBars .bar {
-    opacity: 0;
-    transform: translateY(100%);
-	animation: opacity 1s ease, transform 1s ease;
-} */
 .langBars .bar.in-view{
     animation: animate-in 1s forwards;
 }
