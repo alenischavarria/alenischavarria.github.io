@@ -133,3 +133,47 @@ nav{
     gap: 25px;
     margin-right: 5rem;
 }
+
+@keyframes slideLeftToRight{
+    0%{
+        /* transform: skewX(53deg) translateX(-500px); */
+        transform: translateX(-100%) ;
+    }
+    100%{
+        transform: skew(0deg);
+    }
+}
+@keyframes slideRightToLeft{
+    100%{
+        transform: translateX(0);
+    }
+    0%{
+        transform: translateX(420%);
+    }
+}
+@keyframes slideTopToBottom{
+    100%{
+        transform: translateY(0);
+    }
+    0%{
+        transform: translateY(-500%);
+    }
+}
+@keyframes slideBottomToTop{
+    100%{
+        transform: translateY(0);
+    }
+    0%{
+        transform: translateY(1000%);
+    }
+}
+
+.contact-container h2, .contact-container hr{
+    animation: slideTopToBottom 0.5s ease-in;
+}
+.contact-container .contact-inputs, .contact-container button{
+    animation: slideBottomToTop 0.5s ease-in;
+}
+.contact-container .contact-right{
+    animation: slideRightToLeft 0.5s ease-in ;
+}
