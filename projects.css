@@ -161,3 +161,11 @@ nav{
         transform: translateX(200%);
     }
 }
+
+.webapps.in-view , .projects.in-view , .schoolproj.in-view , .projects3.in-view {
+    animation: slideLeftToRight 0.75s ease-in;
+}
+.mobapps.in-view , .projects2.in-view {
+    animation: slideRightToLeft 0.75s ease-in;
+}
+/* .schoolproj , .projects3{} */

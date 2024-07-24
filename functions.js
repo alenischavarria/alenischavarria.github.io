@@ -137,3 +137,114 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(element);
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const timelineElements = document.querySelectorAll('.webapps');
+    
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                observer.unobserve(entry.target);
+            } else {
+                entry.target.classList.remove('in-view');
+            }
+        });
+    }, { threshold: 0.01 });
+    
+    timelineElements.forEach(element => {
+        observer.observe(element);
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const timelineElements = document.querySelectorAll('.mobapps');
+    
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                observer.unobserve(entry.target);
+            } else {
+                entry.target.classList.remove('in-view');
+            }
+        });
+    }, { threshold: 0.01 });
+    
+    timelineElements.forEach(element => {
+        observer.observe(element);
+    });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const timelineElements = document.querySelectorAll('.projects');
+    
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                observer.unobserve(entry.target);
+            } else {
+                entry.target.classList.remove('in-view');
+            }
+        });
+    }, { threshold: 0.01 });
+    
+    timelineElements.forEach(element => {
+        observer.observe(element);
+    });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const timelineElements = document.querySelectorAll('.projects2');
+    
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                observer.unobserve(entry.target);
+            } else {
+                entry.target.classList.remove('in-view');
+            }
+        });
+    }, { threshold: 0.01 });
+    
+    timelineElements.forEach(element => {
+        observer.observe(element);
+    });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const timelineElements = document.querySelectorAll('.projects3');
+    
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                observer.unobserve(entry.target);
+            } else {
+                entry.target.classList.remove('in-view');
+            }
+        });
+    }, { threshold: 0.01 });
+    
+    timelineElements.forEach(element => {
+        observer.observe(element);
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const timelineElements = document.querySelectorAll('.schoolproj');
+    
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                observer.unobserve(entry.target);
+            } else {
+                entry.target.classList.remove('in-view');
+            }
+        });
+    }, { threshold: 0.01 });
+    
+    timelineElements.forEach(element => {
+        observer.observe(element);
+    });
+});
