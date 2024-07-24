@@ -60,6 +60,7 @@ i{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 200px;
 }
 .aboutmeinfo .col{
     padding-top: 20pt;
@@ -160,7 +161,7 @@ i{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 200px;
 }
 
 .myeducation h2{
@@ -228,8 +229,9 @@ i{
     margin-bottom: 0px;
 }
 
-.mylanguages .title #frameworks{
+.mylanguages .title#framework{
     padding-top: 300px;
+    animation: animate-in 1s forwards;
 }
 
 .mylanguages .title #interests{
@@ -468,3 +470,87 @@ i{
 .langBars .bar.out-view{
     animation: animate-out 1s forwards;
 }
+
+.campus .college-uni.in-view {
+    animation: animate-in 1s forwards;
+}
+.campus .college-uni.out-view {
+    animation: animate-out 1s forwards;
+}
+
+.timeline .timeline-content.in-view{
+    animation: animate-in 1s forwards;
+}
+.timeline .title.in-view{
+    animation: animate-in 1s forwards;
+}
+.timeline .title.out-view{
+    animation: animate-out 1s forwards;
+}
+/* .timeline .timeline-content.out-view{
+    animation: animate-out 1s forwards;
+} */
+
+.myeducation.in-view{
+    animation: animate-in 1s forwards;
+}
+/* .myeducation.out-view{
+    animation: animate-out 1s forwards;
+} */
+.mylanguages.in-view{
+    animation: animate-in 1s forwards;
+}
+
+@keyframes slideLeftToRight{
+    0%{
+        /* transform: skewX(53deg) translateX(-500px); */
+        transform: translateX(-100%) ;
+    }
+    100%{
+        transform: skew(0deg);
+    }
+}
+@keyframes slideRightToLeft{
+    100%{
+        transform: translateX(0);
+    }
+    0%{
+        transform: translateX(200%);
+    }
+}
+
+.aboutmeinfo .col{
+    animation: slideLeftToRight 1s ease-in ;
+}
+.aboutmeinfo img{
+    animation: slideRightToLeft 1s ease-in ;
+}
+
+.mylanguage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin-top: 100px; */
+}
+.mylanguage .title{
+    display: center;
+    justify-content:center;
+    align-items: center;
+    margin-top: 320px;
+}
+.mylanguage .title.in-view{
+    animation: animate-in 1s forwards;
+}
+.mylanguage .title h3{
+    font-size: 45px;
+}
+.mylanguage .title hr{
+    border: none;
+    width: 450px;
+    height: 1px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 0px;
+}
+

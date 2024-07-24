@@ -43,7 +43,7 @@ nav{
     font-size: 35px;
 }
 
-.projects{
+.projects, .projects2, .projects3{
     padding: 25px;
     display: flex;
     align-items: center;
@@ -57,7 +57,13 @@ nav{
 
 .card{
     overflow: hidden;
+    transition: box-shadow 0.1s ease-in-out;
 }
+
+.card:hover{
+    box-shadow: 0 0 8px 10px rgba(246, 243, 243, 0.2), 0 0 20px 10px rgba(255, 255, 255, 0.19);
+ }
+
 
 .card:hover .card-body{
     right: 0;
@@ -93,18 +99,18 @@ nav{
     cursor: pointer;
 }
 
-.myeducation{
+.webapps, .mobapps, .schoolproj{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 60px;
 }
 
-.myeducation h2{
+.webapps h2, .mobapps h2, .schoolproj h2{
     font-size: 45px;
     text-align: center;
 }
-.myeducation hr{
+.webapps hr, .mobapps hr, .schoolproj hr{
     border: none;
     width: 400px;
     height: 1px;
@@ -112,7 +118,7 @@ nav{
     border-radius: 10px;
     margin-bottom: 20px;
 }
-.myeducation .title{
+.webapps .title, .mobapps .title, .schoolproj .title{
     display: grid;
     justify-content:center;
     align-items: center;
@@ -136,4 +142,22 @@ nav{
 }
 .card-title#wa1{
     color: #FFF;
+}
+
+@keyframes slideLeftToRight{
+    0%{
+        /* transform: skewX(53deg) translateX(-500px); */
+        transform: translateX(-100%) ;
+    }
+    100%{
+        transform: skew(0deg);
+    }
+}
+@keyframes slideRightToLeft{
+    100%{
+        transform: translateX(0);
+    }
+    0%{
+        transform: translateX(200%);
+    }
 }
