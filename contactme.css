@@ -105,21 +105,29 @@ nav{
     background:#88C035;
     cursor:pointer;
 }
+.contact-left button:hover{
+    box-shadow: 0 0 8px 10px rgba(246, 243, 243, 0.2), 0 0 20px 10px rgba(255, 255, 255, 0.19);   
+}
 
 .bi-github{
     font-size: 100pt;
     color: #FFF;
     text-shadow: 3px 2px 1px #3F84E5;
+    
 }
 .bi-linkedin{
     font-size: 100pt;
     color: #FFF;
     text-shadow: 3px 2px 1px #3F84E5;
+    background-color: inherit;
 }
 
 .contact-right{
     display:grid;
     margin-left: 100px;
+}
+.contact-right i:hover{
+    box-shadow: 0 0 8px 10px rgba(246, 243, 243, 0.2), 0 0 20px 10px rgba(255, 255, 255, 0.19);   
 }
 
 .twobuttons{

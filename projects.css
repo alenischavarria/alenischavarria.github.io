@@ -50,14 +50,27 @@ nav{
     justify-content: center;
     gap: 50px;
 }
+.projects{
+    display: flex;
+  flex-wrap: wrap;
+
+}
 .text-bg-custom{
     background-color: #3F84E5;
     color: #FFF;
 }
 
+.slider-wrapper{
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
+}
+
 .card{
     overflow: hidden;
     transition: box-shadow 0.1s ease-in-out;
+    width: 18rem; 
+    height: 18rem
 }
 
 .card:hover{
@@ -98,6 +111,7 @@ nav{
     outline: none;
     cursor: pointer;
 }
+
 
 .webapps, .mobapps, .schoolproj{
     display: flex;
