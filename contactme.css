@@ -105,21 +105,29 @@ nav{
     background:#88C035;
     cursor:pointer;
 }
+.contact-left button:hover{
+    box-shadow: 0 0 8px 10px rgba(246, 243, 243, 0.2), 0 0 20px 10px rgba(255, 255, 255, 0.19);   
+}
 
 .bi-github{
     font-size: 100pt;
     color: #FFF;
     text-shadow: 3px 2px 1px #3F84E5;
+    
 }
 .bi-linkedin{
     font-size: 100pt;
     color: #FFF;
     text-shadow: 3px 2px 1px #3F84E5;
+    background-color: inherit;
 }
 
 .contact-right{
     display:grid;
     margin-left: 100px;
+}
+.contact-right i:hover{
+    box-shadow: 0 0 8px 10px rgba(246, 243, 243, 0.2), 0 0 20px 10px rgba(255, 255, 255, 0.19);   
 }
 
 .twobuttons{
@@ -132,4 +140,48 @@ nav{
     display: table-column;
     gap: 25px;
     margin-right: 5rem;
+}
+
+@keyframes slideLeftToRight{
+    0%{
+        /* transform: skewX(53deg) translateX(-500px); */
+        transform: translateX(-100%) ;
+    }
+    100%{
+        transform: skew(0deg);
+    }
+}
+@keyframes slideRightToLeft{
+    100%{
+        transform: translateX(0);
+    }
+    0%{
+        transform: translateX(420%);
+    }
+}
+@keyframes slideTopToBottom{
+    100%{
+        transform: translateY(0);
+    }
+    0%{
+        transform: translateY(-500%);
+    }
+}
+@keyframes slideBottomToTop{
+    100%{
+        transform: translateY(0);
+    }
+    0%{
+        transform: translateY(1000%);
+    }
+}
+
+.contact-container h2, .contact-container hr{
+    animation: slideTopToBottom 0.5s ease-in;
+}
+.contact-container .contact-inputs, .contact-container button{
+    animation: slideBottomToTop 0.5s ease-in;
+}
+.contact-container .contact-right{
+    animation: slideRightToLeft 0.5s ease-in ;
 }

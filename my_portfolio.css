@@ -142,12 +142,12 @@ nav{
     -webkit-mask: linear-gradient( 
         to right,
         transparent,
-        white 10%,
-        white 90%,
+        green 10%,
+        blue 90%,
         transparent
     );
 
-    mask: linear-gradient(90deg, transparent, white 100%, white 100%, transparent);
+    mask: linear-gradient(90deg, transparent, green 100%, blue 100%, transparent);
     padding-bottom: 170pt;
 }
 

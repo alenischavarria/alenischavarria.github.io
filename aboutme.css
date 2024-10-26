@@ -20,14 +20,6 @@ i{
     color: #FFF;
 }
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
-
 .navbar-brand{
     color: #88C035;
     font-size: 35px;
@@ -60,6 +52,7 @@ i{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 200px;
 }
 .aboutmeinfo .col{
     padding-top: 20pt;
@@ -68,7 +61,7 @@ i{
     font-size: 45px;
     padding-bottom: 10pt;
 }
-.aboutmeinfo img{
+.aboutmeinfo .row img{
     margin-right: 93px;
     width: 400px;
     height: 500px;
@@ -81,14 +74,62 @@ i{
     padding-right: 90px;
 }
 
-.aboutmeinfo .text-container .badge{
+.custom-badge, .custom-badge2, .custom-badge3, .custom-badge4{
+    display: inline-block;
+    padding: 0.40em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: black;
+    border: 2.5px solid gray;
+}
+
+.custom-badge:hover{
+    background-color: gold;
+    color:darkblue;
+    border: 2.5px solid gold;
+}
+.custom-badge2:hover{
+    background-color: orange;
+    color: blue;
+    border: 2.5px solid orange;
+}
+.custom-badge3:hover{
+    background-color:indigo;
+    color: white;
+    border: 2.5px solid black;
+}
+.custom-badge4:hover{
+    background-color: red;
+    color: white;
+    border: 2.5px solid black;
+}
+
+.aboutmeinfo .text-container .badge {
+    font-size: medium;
     margin-top: 10pt;
+    background-color: #6c757d; /* Default background color */
+    color: white; /* Default text color */
+    padding: 0.5rem 1rem;
+    border-radius: 9999px; /* Rounded-pill effect */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.aboutmeinfo .text-container .badge:hover {
+    color: #88C035 !important;
+    background-color: white !important;
 }
 
 .text-container{
     padding-left: 75px;
     padding-right: 90px;
 }
+
 
 .education{
     display: flex;
@@ -160,7 +201,7 @@ i{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 200px;
 }
 
 .myeducation h2{
@@ -228,8 +269,9 @@ i{
     margin-bottom: 0px;
 }
 
-.mylanguages .title #frameworks{
+.mylanguages .title#framework{
     padding-top: 300px;
+    animation: animate-in 1s forwards;
 }
 
 .mylanguages .title #interests{
@@ -468,3 +510,87 @@ i{
 .langBars .bar.out-view{
     animation: animate-out 1s forwards;
 }
+
+.campus .college-uni.in-view {
+    animation: animate-in 1s forwards;
+}
+.campus .college-uni.out-view {
+    animation: animate-out 1s forwards;
+}
+
+.timeline .timeline-content.in-view{
+    animation: animate-in 1s forwards;
+}
+.timeline .title.in-view{
+    animation: animate-in 1s forwards;
+}
+.timeline .title.out-view{
+    animation: animate-out 1s forwards;
+}
+/* .timeline .timeline-content.out-view{
+    animation: animate-out 1s forwards;
+} */
+
+.myeducation.in-view{
+    animation: animate-in 1s forwards;
+}
+/* .myeducation.out-view{
+    animation: animate-out 1s forwards;
+} */
+.mylanguages.in-view{
+    animation: animate-in 1s forwards;
+}
+
+@keyframes slideLeftToRight{
+    0%{
+        /* transform: skewX(53deg) translateX(-500px); */
+        transform: translateX(-100%) ;
+    }
+    100%{
+        transform: skew(0deg);
+    }
+}
+@keyframes slideRightToLeft{
+    100%{
+        transform: translateX(0);
+    }
+    0%{
+        transform: translateX(200%);
+    }
+}
+
+.aboutmeinfo .col{
+    animation: slideLeftToRight 0.5s ease-in ;
+}
+.aboutmeinfo img{
+    animation: slideRightToLeft 0.5s ease-in ;
+}
+
+.mylanguage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin-top: 100px; */
+}
+.mylanguage .title{
+    display: center;
+    justify-content:center;
+    align-items: center;
+    margin-top: 320px;
+}
+.mylanguage .title.in-view{
+    animation: animate-in 1s forwards;
+}
+.mylanguage .title h3{
+    font-size: 45px;
+}
+.mylanguage .title hr{
+    border: none;
+    width: 450px;
+    height: 1px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 0px;
+}
+
